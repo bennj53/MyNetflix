@@ -1,0 +1,13 @@
+<div class="search-grid">
+  <form [formGroup]="searchGroup">
+    <input type="text"
+           placeholder="Rechercher un film par titre, réalisateur, ..."
+           id="title"
+           formControlName="title"
+    />
+  </form>
+</div>
+
+<div>
+  <app-film-list [films$]="films$"></app-film-list>
+</div>

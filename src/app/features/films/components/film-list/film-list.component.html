@@ -1,0 +1,6 @@
+<div class="film-carte-container">
+  <app-film-carte *ngFor="let film of films$ | async; let index = index;"
+                  [titleViaInput]="film.title" [noteViaInputSignal]="film.note" [img]="film.posterUrl"
+                  [overview]="film.overview">
+  </app-film-carte>
+</div>

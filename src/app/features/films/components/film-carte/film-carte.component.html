@@ -1,0 +1,14 @@
+<div class="film-carte-container">
+  <div class="film-poster">
+    <div class="film-poster-inner">
+      <img [src]="img()"/>
+    </div>
+  </div>
+  <p class="film-info">
+    Titre : {{ titleViaInput }}
+    <br>
+    Note : {{ noteViaInputSignal() }}
+    <br>
+    Synopsis : {{ overview() }}
+  </p>
+</div>

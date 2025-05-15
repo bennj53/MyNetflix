@@ -1,0 +1,23 @@
+.search-grid {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+input {
+  display: block;
+  width: 500px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+input:hover {
+  background-color: #cccccc;
+}

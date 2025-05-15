@@ -1,0 +1,41 @@
+.film-carte-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 660px; /* Hauteur fixe */
+  overflow: hidden; /* Pour cacher le débordement */
+}
+
+.film-poster {
+  position: relative;
+  flex-shrink: 0;
+  height: 70%; /* Réserve 60% pour l’image */
+  overflow: hidden;
+}
+
+.film-poster-inner {
+  position: absolute;
+  margin: 0 auto;
+}
+
+.film-poster img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* ⬅️ L'image est réduite mais pas coupée */
+  border-radius: 4px;
+}
+
+.film-info {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Nombre de lignes visibles */
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+  line-height: 1.4em;
+}
